@@ -1,4 +1,4 @@
-# MeldRx Demo App - Patient Portal (React)
+# MeldRx Demo App - Blank (React)
 
 ## Getting Started
 
