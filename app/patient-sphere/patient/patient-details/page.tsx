@@ -37,13 +37,13 @@ export default function Page(props: IPageProps) {
     }, [setIsLoading, setPatient, appContext]);
 
     return (
-        <div>
+        <div className="p-8">
             <Head><title>Patient Details</title></Head>
             {isLoading && <div>Loading...</div>}
 
-            <code>
+            <pre>
                 {JSON.stringify(patient, null, 2)}
-            </code>
+            </pre>
         </div>
     );
 }
