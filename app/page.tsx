@@ -3,15 +3,13 @@ import { useCallback } from 'react';
 import Head from 'next/head';
 import styles from '@/app/styles/Home.module.css';
 import FHIR from "fhirclient";
-import { MeldRxUtils } from '@meldrx/meldrx-fhir-client';
 import { launchOptions } from "@/config/config";
 import IMeldRxLaunchData from '@/config/IMeldRxLaunchData';
 
 export default function Page() {
   // When a button is pressed, tries to authorize based on the given configuration data...
   const onLaunchClick = useCallback((launchData: IMeldRxLaunchData) => {
-    console.log(JSON.stringify(launchData));
-    const fhirUrl = MeldRxUtils.getWorkspaceFhirUrl(launchData.authorityUrl, launchData.workspaceId);
+    const fhirUrl = launchData.workspaceUrl;
     FHIR.oauth2.authorize({
         clientId: launchData.clientId,
         scope: launchData.scope,
