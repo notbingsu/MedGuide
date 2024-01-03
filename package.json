@@ -1,6 +1,6 @@
 {
   "name": "meldrx-template-app-blank-nextjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Blank MeldRx Template App using NextJS",
   "author": "Eric Morgan",
@@ -14,7 +14,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
-    "@meldrx/meldrx-fhir-client": "^0.0.1",
     "@types/fhir": "^0.0.37",
     "@types/node": "20.4.10",
     "@types/react": "18.2.20",
